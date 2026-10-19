@@ -1,7 +1,7 @@
 # London Startup Center — website
 
 Single-page site for [londonstartupcenter.com](https://londonstartupcenter.com).
-Built with [Vite](https://vite.dev), [GSAP](https://gsap.com) (ScrollTrigger), [Lenis](https://lenis.darkroom.engineering) smooth scrolling and a small raw-WebGL shader for the hero background.
+Built with [Vite](https://vite.dev), [GSAP](https://gsap.com) (ScrollTrigger), [Lenis](https://lenis.darkroom.engineering) smooth scrolling.
 
 ## Requirements
 
@@ -42,7 +42,6 @@ Pick either option.
 ```
 index.html          All page markup and content
 src/main.js         Interactions, scroll animations, smooth scroll, member logos list
-src/hero-gl.js      Hero background shader (WebGL)
 src/style.css       Styles and brand tokens (colours, fonts, spacing)
 src/fonts.css       Self-hosted font faces (Poppins, Antonio)
 public/img          Photos, logo, favicon, social share image (og.jpg)

@@ -3,7 +3,6 @@ import './style.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
-import { initHeroGL } from './hero-gl.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -169,15 +168,6 @@ if (finePointer) {
     li.addEventListener('pointermove', (e) => { fx(e.clientX + 180); fy(e.clientY); });
   });
 }
-
-/* ---------------- Hero WebGL ---------------- */
-initHeroGL($('.hero__gl'), {
-  reduced,
-  onScroll: (set) => ScrollTrigger.create({
-    trigger: '.hero', start: 'top top', end: 'bottom top',
-    onUpdate: (st) => set(st.progress),
-  }),
-});
 
 /* hero logo 3D tilt with pointer */
 if (finePointer && !reduced) {
